@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "serena": {
+      "command": "/opt/homebrew/bin/uv",
+      "args": [
+        "run",
+        "--directory",
+        "{User_path}/serena",
+        "serena-mcp-server"
+      ],
+      "alwaysAllow": [
+        "read_file",
+        "activate_project",
+        "check_onboarding_performed",
+        "onboarding",
+        "write_memory",
+        "initial_instructions",
+        "get_symbols_overview"
+      ]
+    },
+    "figma": {
+      "url": "http://127.0.0.1:3845/sse"
+    },
+    "seqthinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+     "magicui": {
+      "command": "npx",
+      "args": ["-y", "@magicuidesign/mcp@latest"]
+    }
+  }
+}
